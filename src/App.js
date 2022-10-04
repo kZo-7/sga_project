@@ -1,5 +1,6 @@
-import "./App.css"
+import "./App.css"//Ποια ειναι η σειρα των import???
 import { useEffect } from "react";
+// import toast, { Toaster } from "react-hot-toast";
 import { ArticleMenu, Navbar, ScrollToTop } from "./components";
 import { Header, Body, Footer } from "./containers";
 
@@ -11,11 +12,12 @@ export default function App() {
         top: 0,
         left: 0,
         behavior: 'instant'})
-    }, [])
+    }, []);
 
   return (
     <div className="App">
-      <ScrollToTop />      
+      <ScrollToTop />    
+      {/* <Toaster />   */}
       <Navbar />
       <Header />
       <ArticleMenu />

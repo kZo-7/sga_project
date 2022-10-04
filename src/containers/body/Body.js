@@ -1,5 +1,5 @@
 import React from "react";
-import { AboutSGA, AboutMe, ScrollToTop } from "../../components";
+import { AboutSGA, AboutMe } from "../../components";
 
 const Body = () => {
     return (

@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+// import toast from "react-hot-toast";
 
 const urlAPI = 'https://content.guardianapis.com/search?page=2&q=debate&api-key=test';
 
@@ -83,7 +84,8 @@ const ArticleMenu = () => {
                             </button>
                         </Link>
                         : <button onClick={() => {
-                            window.alert("Please, choose an option from the above menu")
+                            // toast("Please, choose an option from the above menu");
+                            window.alert("Please, choose an option from the above menu");
                         }}>
                             Show article's info
                         </button>
