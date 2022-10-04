@@ -1,16 +1,21 @@
 import "./App.css"
 import { useEffect } from "react";
-import { ArticleMenu, Navbar } from "./components";
+import { ArticleMenu, Navbar, ScrollToTop } from "./components";
 import { Header, Body, Footer } from "./containers";
 
 export default function App() {
   //const App = () => { 
+    
     useEffect(() => {
-      window.scrollTo(0, 0)
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'instant'})
     }, [])
 
   return (
     <div className="App">
+      <ScrollToTop />      
       <Navbar />
       <Header />
       <ArticleMenu />

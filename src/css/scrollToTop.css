@@ -1,0 +1,25 @@
+.button2Top {
+    /* position: relative; */
+    max-width: 56rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button2Top_position {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 20;
+}
+
+.button2Top_style {
+    background-color: var(--color-header);
+    border: 1px solid var(--color-bg);
+    border-radius: 50%;
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+.button2Top_style:hover {
+    background-color: var(--color-footer);
+}

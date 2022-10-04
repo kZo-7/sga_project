@@ -1,10 +1,9 @@
 import React from "react";
-import { AboutSGA, AboutMe } from "../../components";
+import { AboutSGA, AboutMe, ScrollToTop } from "../../components";
 
 const Body = () => {
     return (
         <div className="gsa__body">
-            {/* <ArticleMenu /> */}
             <AboutSGA />
             <AboutMe />
         </div>

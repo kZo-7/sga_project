@@ -3,3 +3,4 @@ export { default as ArticleMenu } from './articleMenu/ArticleMenu';
 export { default as AboutMe } from './aboutMe/AboutMe';
 export { default as AboutSGA } from './aboutSGA/AboutSGA';
 export { default as Navbar } from './navbar/Navbar';
+export { default as ScrollToTop } from "./scrollToTop/ScrollToTop";

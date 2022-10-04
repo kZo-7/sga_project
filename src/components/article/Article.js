@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { Body, Footer } from "../../containers";
-import Navbar from "../navbar/Navbar";
+// import Navbar from "../navbar/Navbar";
+import { Navbar, ScrollToTop } from "../../components"
 
 
 const Article = () => {
@@ -12,11 +13,15 @@ const Article = () => {
     console.log("Info: ", info);
 
     useEffect(() => {
-        window.scrollTo(0, 0)
-      }, [])
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'instant'})
+      }, []);
 
     return (
         <div className="article">
+            <ScrollToTop />
             <Navbar />
             <div className="gsa__article section__padding">
                 <h2>Article Info</h2>
