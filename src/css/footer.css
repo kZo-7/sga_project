@@ -1,0 +1,18 @@
+.gsa__footer {
+    font-family: var(--font-text);
+    max-width: 56rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gsa__footer-copyright {
+    font-size: 0.8rem;
+    color: var(--color-bg);
+    min-height: 1.5rem;
+    text-align: center;
+    padding-top: 0.6rem;
+}
+
+.gsa__footer-copyright p {
+    opacity: .8;
+}
