@@ -1,0 +1,105 @@
+.article {
+    background-color: var(--color-primary);
+}
+
+.gsa__article {
+    background-color: var(--color-bg);
+    font-family: var(--font-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 56rem;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: auto; */
+}
+
+.gsa__article h2 {
+    color: var(--color-headerText);
+    font-family: var(--font-header);
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem 1rem;
+}
+
+.hrz-line {
+    border-color: var(--color-footer);
+    border-style: solid none none none;
+    border-width: 2px;
+}
+
+.gsa__article-container {
+    display:flex;
+    flex-direction: column;
+    overflow-x: auto;
+}
+
+.gsa__article-container_table, tr, th, td {
+    font-family: var(--font-text);
+    font-size: 1.1rem;
+    line-height: 1.4;
+    padding: 0.7rem 1rem;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.table_head {
+    text-align: right;
+    min-width: 14ch;
+    font-family: var(--font-header);
+    font-size: 1rem;
+    border-right: 2px solid var(--color-footer);
+}
+
+.gsa__article-button {
+    text-align: right;
+    padding: 1rem 0;
+}
+
+.gsa__article-button button {
+    min-height: 2rem;
+    font-family: var(--font-text);
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    border: none;
+    border-radius: 5px;
+    background: var(--color-header);
+    color: var(--color-bg);
+    cursor: pointer;
+    outline: none;
+    padding: 0 1rem;
+    margin-top: 1rem;
+}
+
+.gsa__article-button button:hover {
+    background: var(--color-menu);
+}
+
+@media screen and (max-width: 700px) {
+    .gsa__article h2 {
+        font-size: 1.8rem;
+    }
+    .gsa__article-container_table, tr, th, td {
+        font-size: 1rem;
+    }
+    .table_head {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .gsa__article {
+        min-width: 250px;
+    }
+    .gsa__article h2 {
+        font-size: 1.6rem;
+    }
+    .gsa__article-container_table, tr, th, td {
+        font-size: 0.9rem;
+    }
+    .table_head {
+        font-size: 0.8rem;
+    }
+}
