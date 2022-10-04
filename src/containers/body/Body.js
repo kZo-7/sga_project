@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import { AboutSGA, AboutMe } from "../../components";
 
-function Body() {
-  return (
-    <div>Body</div>
-  )
+const Body = () => {
+    return (
+        <div className="gsa__body">
+            {/* <ArticleMenu /> */}
+            <AboutSGA />
+            <AboutMe />
+        </div>
+    )
 }
-
 export default Body;
