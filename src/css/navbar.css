@@ -1,0 +1,109 @@
+.gsa__navbar {
+    display: flex;
+    flex: 1 1 0%;
+    align-items: center;
+    width: 100%;
+    max-width: 56rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.gsa__navbar-links {
+    flex: 1 1 0%;
+    display: flex;
+    align-self: center;
+    width: 100%;
+}
+
+.gsa__navbar-links_logo {
+    margin-right: 2rem;
+    justify-content: flex-start;
+}
+
+.gsa__navbar-links_container {
+    display: flex;
+    flex: 1 1 0%;
+    align-self: center;
+    justify-content: flex-end;
+}
+
+.gsa__navbar-links_container :hover {
+    color: var(--color-menu);
+}
+
+.gsa__navbar-links_container p,
+.gsa__navbar-menu_container p {
+    color: var(--color-headerText);
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0 1.5rem;
+    cursor: pointer;
+}
+
+.gsa__navbar-menu {
+    display: none;
+    margin-left: 1rem;
+    position: relative;
+}
+
+.gsa__navbar-menu svg {
+    cursor: pointer;
+}
+
+.gsa__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-footer);
+    padding: 1rem;
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 10rem;
+    border-radius: 5px;
+}
+
+.gsa__navbar-menu_container p {
+    margin: 0.5rem 0;
+}
+.gsa__navbar-menu_container p :hover {
+    color: #FCF8E8;
+}
+
+.gsa__navbar-menu_container {
+    top: 1.25rem;
+}
+
+@media screen and (max-width: 920px) {
+    .gsa__navbar-links_container {
+        display: none;
+    }
+    .gsa__navbar-menu_container p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+    .gsa__navbar-links {
+        position: relative;
+        min-width: 220px;
+    }
+    .gsa__navbar-menu {
+        display: flex;
+        position: absolute;
+        right: 1rem;
+        top: 4rem;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .gsa__navbar-menu {
+        align-items: flex-start;
+    }
+    .gsa__navbar-menu_container {
+        padding: 0 0.7rem;
+        min-width: 8rem;
+    }
+}

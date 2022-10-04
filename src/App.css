@@ -1,0 +1,149 @@
+@import "css/navbar.css";
+@import "css/header.css";
+@import "css/articleMenu.css";
+@import "css/article.css";
+@import "css/aboutSGA.css";
+@import "css/aboutMe.css";
+@import "css/footer.css";
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-bg);
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  aspect-ratio: attr(width) / attr(height);
+}
+
+.App {
+  background-color: var(--color-primary);
+}
+
+select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1rem 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+}
+
+/* Classes */
+
+.gradient__bg-hd {
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(90deg, rgba(180, 198, 166, 1) 0%, rgba(139, 163, 133, 1) 10%, rgba(102, 128, 106, 1) 43%, rgba(102, 128, 106, 1) 100%);
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(90deg, rgba(180, 198, 166, 1) 0%, rgba(139, 163, 133, 1) 10%, rgba(102, 128, 106, 1) 43%, rgba(102, 128, 106, 1) 100%);
+  /* opera 11.10+ */
+  background: -o-linear-gradient(90deg, rgba(180, 198, 166, 1) 0%, rgba(139, 163, 133, 1) 10%, rgba(102, 128, 106, 1) 43%, rgba(102, 128, 106, 1) 100%);
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66806A', endColorstr='#B4C6A6', GradientType=0);
+  /* ie 10+ */
+  background: -ms-linear-gradient(90deg, rgba(180, 198, 166, 1) 0%, rgba(139, 163, 133, 1) 10%, rgba(102, 128, 106, 1) 43%, rgba(102, 128, 106, 1) 100%);
+  /* global 94%+ browsers support */
+  background: linear-gradient(90deg, rgba(180, 198, 166, 1) 0%, rgba(139, 163, 133, 1) 10%, rgba(102, 128, 106, 1) 43%, rgba(102, 128, 106, 1) 100%);
+}
+
+.gradient__bg-ft {
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(ellipse at 50% 50%, rgba(102, 128, 106, 1) 0%, rgba(139, 163, 133, 1) 98%, rgba(139, 163, 133, 1) 100%);
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(ellipse at 50% 50%, rgba(102, 128, 106, 1) 0%, rgba(139, 163, 133, 1) 98%, rgba(139, 163, 133, 1) 100%);
+  /* opera 11.10+ */
+  background: -o-radial-gradient(ellipse at 50% 50%, rgba(102, 128, 106, 1) 0%, rgba(139, 163, 133, 1) 98%, rgba(139, 163, 133, 1) 100%);
+  /* ie 10+ */
+  background: -ms-radial-gradient(ellipse at 50% 50%, rgba(102, 128, 106, 1) 0%, rgba(139, 163, 133, 1) 98%, rgba(139, 163, 133, 1) 100%);
+  /* global 92%+ browsers support */
+  background: radial-gradient(ellipse at 50% 50%, rgba(102, 128, 106, 1) 0%, rgba(139, 163, 133, 1) 98%, rgba(139, 163, 133, 1) 100%);
+}
+
+/* For larger devices e.g. Laptops & PC's */
+.section__padding {
+  padding: 4rem 6rem;
+}
+
+.section__margin {
+  margin: 4rem 6rem;
+}
+
+/* For medium devices e.g. tablets */
+@media screen and (max-width: 700px) {
+  .section__padding {
+    padding: 4rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section__margin {
+    margin: 4rem;
+  }
+}
+
+/* For smaller devices e.g. smartphones */
+@media screen and (max-width: 570px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .section__margin {
+    margin: 4rem 2rem;
+  }
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* Animista CSS Animations */
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

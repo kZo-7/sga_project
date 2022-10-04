@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lusitana&family=Raleway:wght@700;900&display=swap');
+
+:root {
+  --font-text: "Lusitana", serif;
+  --font-header: "Raleway", sans-serif;
+
+  --color-primary: #1f1f1f;
+  --color-headerText: #1a1d1d;
+  --color-header: #66806A;
+  --color-bg: #FCF8E8;
+  --color-footer: #ECB390;
+  --color-text: #252525;
+  --color-menu: #DF7861;
+}
