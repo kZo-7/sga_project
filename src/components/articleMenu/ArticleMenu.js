@@ -19,6 +19,7 @@ const fetchingGuardianData = () => {
 const ArticleMenu = () => {
     const [article, setArticle] = useState([]);
     const [articleInfos, setArticleInfos] = useState([]);
+    const [toggleButton, setToggleButton] = useState(false);
 
     const dataThroughLink = {//object with some info inside
         from: "ArticleMenu component",
@@ -55,6 +56,7 @@ const ArticleMenu = () => {
         setArticle([e.target.value]);//asynchronisity - pairnei timi ston epomeno kyklo ki etsi an exoyme ta consolelog mesa sthn handleArticle Den pairnoume apotelesma
         passData(e.target.value);    //we input chosen article data into object "dataThroughLink" because
         print(e);                    //we want to pass it through Link in another component
+        setToggleButton(true);
     }
 
     return (
@@ -72,14 +74,20 @@ const ArticleMenu = () => {
                     </div>
                 </div>
                 <div className="gsa__articleMenu-container_buttonLink">
-                    <Link to={"/articleInfo"} state={dataThroughLink}>
-                        <button onClick={() => {
-                            // console.log("Into Button - typeof(article) : ", typeof (article));
-                            // console.log("Into Button - article : ", article);
+                    {toggleButton
+                        ? <Link to={"/articleInfo"} state={dataThroughLink}>
+                            <button onClick={() => {
+                                setToggleButton(false);
+                            }}>
+                                Show article's info
+                            </button>
+                        </Link>
+                        : <button onClick={() => {
+                            window.alert("Please, choose an option from the above menu")
                         }}>
                             Show article's info
                         </button>
-                    </Link>
+                    }
                 </div>
             </div>
         </div>
