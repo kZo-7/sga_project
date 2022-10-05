@@ -74,7 +74,8 @@
 }
 
 .gsa__article-button button:hover {
-    background: var(--color-menu);
+    background: var(--color-footer);
+    color: var(--color-text);
 }
 
 @media screen and (max-width: 700px) {

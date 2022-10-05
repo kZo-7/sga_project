@@ -23,3 +23,24 @@
 .button2Top_style:hover {
     background-color: var(--color-footer);
 }
+
+@media screen and (max-width: 896px) {
+    .button2Top_position {
+        right: 8px;
+        bottom: 30px;
+        opacity: 0.9;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .button2Top_position {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .button2Top_position {
+        visibility: hidden;
+    }
+}

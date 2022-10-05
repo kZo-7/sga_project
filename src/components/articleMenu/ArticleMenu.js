@@ -1,9 +1,22 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-// import toast from "react-hot-toast";
+import toast, { Toaster } from 'react-hot-toast';
 
 const urlAPI = 'https://content.guardianapis.com/search?page=2&q=debate&api-key=test';
+
+const notify = () => toast.error('Please, choose an option from the menu.', {
+    style: {
+        background: '#FCF8E8',
+        border: '2px solid #DF7861',
+        color: '#252525',
+        padding: '1rem'
+    },
+    iconTheme: {
+        primary: '#AAA',
+        secondary: 'red',
+    },
+});
 
 const fetchingGuardianData = () => {
     return axios.get(urlAPI)
@@ -83,13 +96,11 @@ const ArticleMenu = () => {
                                 Show article's info
                             </button>
                         </Link>
-                        : <button onClick={() => {
-                            // toast("Please, choose an option from the above menu");
-                            window.alert("Please, choose an option from the above menu");
-                        }}>
+                        : <button onClick={notify}>
                             Show article's info
                         </button>
                     }
+                    <Toaster />
                 </div>
             </div>
         </div>
