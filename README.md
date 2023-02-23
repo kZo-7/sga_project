@@ -21,6 +21,7 @@ The user chooses one from the list and after pressing the button, the UI is bein
 ```
 
 ### Dependencies used
+```
 - axios 0.27.2
 - react 18.2.0
 - react-dom 18.2.0
@@ -29,7 +30,7 @@ The user chooses one from the list and after pressing the button, the UI is bein
 - react-router-dom 6.4.1
 - react-scripts 5.0.1
 - web-vitals 2.1.4
-
+```
 
 ### Installation
 After cloning the repository in your computer, type in the console of VSCode or any other tool you use:
