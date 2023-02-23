@@ -78,4 +78,3 @@ const Article = () => {
     );
 }
 export default Article;
-// na to omorfynw me CSS

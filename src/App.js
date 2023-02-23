@@ -1,8 +1,8 @@
-import "./App.css"//Ποια ειναι η σειρα των import???
+//Σειρά των import: πρώτα τα πιο βαριά (react κτλ και έπειτα components και .css
 import { useEffect } from "react";
-// import toast, { Toaster } from "react-hot-toast";
 import { ArticleMenu, Navbar, ScrollToTop } from "./components";
 import { Header, Body, Footer } from "./containers";
+import "./App.css"
 
 export default function App() {
   //const App = () => { 

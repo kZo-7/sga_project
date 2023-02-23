@@ -8,8 +8,7 @@ const AboutSGA = () => {
       <div className="gsa__aboutSGA-container">
         <div className='gsa__aboutSGA-container_collabs'>
           <h3>Collaborators</h3>
-          <h4><a href="https://www.linkedin.com/in/dionisis-papadopoulos-b837b9130/">Dio-P</a> <MdKeyboardArrowLeft size="1.2rem" /> </h4>
-          <h4><a href="#aboutMe">kZo</a> <MdKeyboardArrowLeft size="1.2rem" /> </h4>
+          <h4><a href="aboutMe">kZo</a> <MdKeyboardArrowLeft size="1.2rem" /> </h4>
         </div>
         <div className='gsa__aboutSGA-container_aim'>
           <h3>Aim</h3>
